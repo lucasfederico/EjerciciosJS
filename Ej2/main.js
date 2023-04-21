@@ -1,11 +1,13 @@
-let palabra = document.getElementById('palabra')
-let agregar = document.getElementById('agregar')
-let letraChoice = document.getElementById('letraChoice')
-let mostrar = document.getElementById('mostrar')
-let hola = document.getElementById('hola')
+const palabra = document.getElementById('palabra')
+const agregar = document.getElementById('agregar')
+const letraChoice = document.getElementById('letraChoice')
+const mostrar = document.getElementById('mostrar')
+const hola = document.getElementById('hola')
 
-let listaPalabras = []
+// INICIALIZO EL ARRAY
+const listaPalabras = []
 
+// FUNCION QUE AGREGA UNA PALABRA A MI LISTA
 agregar.addEventListener('click',()=>{
     if (palabra.value != '') {
         listaPalabras.push(palabra.value)
@@ -16,6 +18,7 @@ agregar.addEventListener('click',()=>{
     palabra.value = ''
 })
 
+// FUNCION QUE MUESTRA CUANTAS PALABRAS EMPIEZAN CON LA LETRA ELEGIDA
 mostrar.addEventListener('click',()=>{
     let contador = 0
     if (letraChoice.value != '') {
