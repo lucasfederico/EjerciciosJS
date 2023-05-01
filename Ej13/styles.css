@@ -1,0 +1,59 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 60px;
+    background-color: #FFC107;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+nav img{
+    margin-left: 10px;
+    width: 40px;
+    padding: 10px;
+}
+nav ul{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+nav ul li{
+    
+}
+nav ul li a{
+    padding:7px;
+    border: solid 1px #E64A19;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: #E64A19;
+}
+section{
+    background-color: #BDBDBD;
+    padding-left: 15px;
+}
+main{
+    width: 50%;
+}
+main img{
+    width: 400px;
+}
+#container_img{
+    display: flex;
+}
+figure{
+    margin: 0;
+    
+}
+.imagenes_pokemones{
+    width: 270px;
+}

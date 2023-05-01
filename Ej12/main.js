@@ -2,18 +2,23 @@ const namesa = document.querySelector("#name");
 const email = document.querySelector("#email");
 const num = document.querySelector("#num");
 const btn = document.querySelector("#btn");
+const good = document.querySelector("#good");
 
-btn.addEventListener("click", () => {
-  if (namesa.value == "") {
-    alert("Complete el campo por favor");
-    namesa.focus();
-  } else if (email.value == "") {
-    alert("Complete el campo por favor");
-    email.focus();
-  } else if (email.value.includes("@") && email.value.includes(".com")) {
-    alert("No es un email valido");
-  } else if (num.value == "") {
-    alert("Complete el campo por favor");
-    num.focus();
-  }
-});
+// Funcion que comprueba que los datos esten correctos
+const comprobarDatos = ()=>{
+  if (namesa.value != "" || email.value != "" || num.value != "") {
+    // Comprobamos que ingrese un email valido
+    if(email.value.includes('@') && email.value.includes('.com')){
+      let txt = document.createTextNode('Datos enviados')
+      let mensaje = document.createElement('h3')
+      mensaje.appendChild(txt)
+      document.body.appendChild(mensaje)
+    }else{
+      alert('Ingrese un correo valido por favor.')
+    }
+  }else{
+    alert('Complete el campo por favor.')
+    }
+}
+// Boton que llama a la funcion 
+btn.addEventListener("click",comprobarDatos);
