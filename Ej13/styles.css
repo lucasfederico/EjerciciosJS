@@ -1,12 +1,16 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
+    background-color: #BDBDBD;
 }
 header{
-    height: 60px;
+    height: 70px;
     background-color: #FFC107;
     width: 100%;
+    margin: 0;
 }
 nav{
     display: flex;
@@ -15,8 +19,8 @@ nav{
 }
 nav img{
     margin-left: 10px;
-    width: 40px;
-    padding: 10px;
+    width: 55px;
+    padding: 8px;
 }
 nav ul{
     width: 40%;
@@ -30,15 +34,10 @@ nav ul li{
     
 }
 nav ul li a{
-    padding:7px;
-    border: solid 1px #E64A19;
-    border-radius: 5px;
     text-decoration: none;
     color: black;
-    background-color: #E64A19;
 }
 section{
-    background-color: #BDBDBD;
     padding-left: 15px;
 }
 main{
@@ -48,12 +47,41 @@ main img{
     width: 400px;
 }
 #container_img{
+    width: 100%;
+    height: 700px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 figure{
     margin: 0;
+    height: 270px;
     
 }
 .imagenes_pokemones{
     width: 270px;
+}
+.imagenes_pokemones2{
+    width: 200px;
+}
+
+.modo_oscuro{
+    background-color: black;
+    color: whitesmoke;
+}
+.modo_oscuro2{
+    background-color: #1a237e;
+}
+.modo_oscuro2 a{
+    color: whitesmoke !important;
+}
+.modo_rosa{
+    background-color: #f48fb1;
+    color: #fce4ec;
+}
+.modo_rosa2{
+    background-color: #f50057;
+}
+.modo_rosa2 a{
+    color: #fce4ec;
 }
