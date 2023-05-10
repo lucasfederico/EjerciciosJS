@@ -23,11 +23,14 @@ nav ul{
     justify-content: end;
     gap: 10px;
 }
-ul li a{
+nav ul li a{
     color:#505050;
     font-weight: bold;
     font-size: 13px;
     text-decoration: none;
+}
+nav ul li a:hover{
+    color: green;
 }
 .header-2{
     height: 150px;
@@ -57,7 +60,12 @@ ul li a{
     border-top: solid 2px;
     cursor: pointer;
 }
-.menu ul li:hover{
+.menu ul li a{
+    text-decoration: none;
+    color: #505050;
+    font-weight: bold;
+}
+.menu ul li a:hover{
     color: green !important;
 }
 .menu ul li a{
@@ -69,8 +77,6 @@ ul li a{
 }
 .menu li:nth-child(2){
     border-top-color: #ffc107;
-    display: flex;
-    cursor: pointer;
 }
 .menu li:nth-child(3){
     border-top-color: #ef5350;
@@ -97,12 +103,11 @@ ul li a{
     border-top-color: #ffc107;
 }
 /* Lista despegabla */
-.arrow_style{
-    width: 20px;
-    transition: transform 1s;
-}
-.arrow_style:hover{
-    transform: rotate(90deg);
+#mi-imagen{
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 12px;
+    transition: transform 0.5s ease;
 }
 .show{
     position: absolute;
@@ -116,15 +121,56 @@ ul li a{
 .show ul{
     margin: 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
     list-style: none;
     font-weight: bold;
     color: #505050;
 }
 .show ul li{
     padding: 10px 10px;
+    
+}
+.show ul li a{
+    text-decoration: none;
+    color: #505050;
+    font-weight: bold;
 }
 .show ul li a:hover{
+    color: green;
+}
+/* LISTA DESPEGABLE 2 */
+#mi-imagen2{
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 12px;
+    transition: transform 0.5s ease;
+}
+.show2{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 316px;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+    display: none;
+}
+.show2 ul{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    font-weight: bold;
+    color: #505050;
+}
+.show2 ul li{
+    padding: 10px 10px;
+}
+.show2 ul li a{
+    text-decoration: none;
+    color: #505050;
+    font-weight: bold;
+}
+.show2 ul li a:hover{
     color: green;
 }
 /* MAIN */
