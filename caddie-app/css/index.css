@@ -1,0 +1,11 @@
+.logo{
+    width: 40px;
+}
+main{
+    height: 90vh;
+    background-color: whitesmoke;
+}
+.btn-success{
+    background-color: #7ED957 !important;
+    border: #7ED957 !important;
+}
